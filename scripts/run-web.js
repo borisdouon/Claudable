@@ -9,6 +9,7 @@ const { spawn } = require('child_process');
 const path = require('path');
 const os = require('os');
 const dotenv = require('dotenv');
+require('./patch-hash-path');
 const { ensureEnvironment } = require('./setup-env');
 const { PrismaClient } = require('@prisma/client');
 
